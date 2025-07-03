@@ -1,3 +1,16 @@
+# Future Improvements:
+
+Currently, todos are stored without unique identifiers. To enable functionality like deleting or updating individual todos, I would:
+
+- Modify the Todo data structure to include an id property on each todo item at creation. 
+
+- Implement new API endpoints to support these operations:
+
+    DELETE /api/todo/:id — Remove a todo by its id.
+    PATCH /api/todo/:id — Update a todo’s task or status by its id.
+
+Thank you for taking the time to review my test!
+
 # TODO App
 
 ## The task

@@ -1,22 +1,67 @@
 .todo-app {
-    font-family: sans-serif;
-}
-
-/** add todo **/
-.add-todo {
-    margin-left: 0.5rem;
-}
-
-/** todo list **/
-.todo-list {
-    margin-top: 1rem;
-    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+  
+  .todo-app h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .add-todo {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .add-todo input[type="text"] {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-todo input[type="text"]:focus {
+    border-color: #8d949b;
+    outline: none;
+  }
+  
+  .add-todo button {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    background-color: #8d949b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .add-todo button:hover {
+    background-color: #6c7280;
+  }
+  
+  .todo-list {
     list-style: none;
-}
-
-/** todo item **/
-.todo-item {
-    font-family: monospace;
-    cursor: pointer;
-    line-height: 1.5;
-}
+    padding: 0;
+  }
+  
+  .todo-item {
+    font-family: 'Poppins', sans-serif;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .todo-item:hover {
+    background-color: #e6f7ff;
+    transform: translateX(4px);
+  }
+  
