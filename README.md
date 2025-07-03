@@ -1,4 +1,4 @@
-# Future Improvements:
+## Future Improvements:
 
 Currently, todos are stored without unique identifiers. To enable functionality like deleting or updating individual todos, I would:
 
@@ -10,10 +10,11 @@ Currently, todos are stored without unique identifiers. To enable functionality 
 
   PATCH /api/todo/:id — Update a todo’s task or status by its id.
 
-# Testing
+## Testing
 The project includes unit tests for the repository and service layers to verify logic in isolation. Integration tests using Jest and Supertest cover the API endpoints to ensure correct request handling and responses.
 
 Thank you for taking the time to review my test!
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 # TODO App
 
