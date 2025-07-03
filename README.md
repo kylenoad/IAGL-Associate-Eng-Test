@@ -2,12 +2,13 @@
 
 Currently, todos are stored without unique identifiers. To enable functionality like deleting or updating individual todos, I would:
 
-- Modify the Todo data structure to include an id property on each todo item at creation. 
+- Modify the Todo data structure to include an id property on each todo item at creation.
 
 - Implement new API endpoints to support these operations:
 
-    DELETE /api/todo/:id — Remove a todo by its id.
-    PATCH /api/todo/:id — Update a todo’s task or status by its id.
+  DELETE /api/todo/:id — Remove a todo by its id.
+
+  PATCH /api/todo/:id — Update a todo’s task or status by its id.
 
 Thank you for taking the time to review my test!
 
@@ -37,16 +38,17 @@ Please write code as you would for it to be production ready.
 
 While it isn't required to make the front end look slick and well designed we would appreciate any effort that you put into UI design and UX.
 
-
 ## Starting the application
 
 - Backend: (In the backend folder)
+
 ```shell
 npm install
 npm start # Start the server in the 9091 port
 ```
 
 - Frontend: (In the root folder)
+
 ```shell
 npm install
 npm start # Starts the app in http://localhost:3000
@@ -56,7 +58,7 @@ npm start # Starts the app in http://localhost:3000
 
 You can find it in the `/backend` directory. It's built in Express and stores the TODO items in memory.
 
-* GET /api/todo
+- GET /api/todo
 
 ![get todo picture](docs/get_todo_endpoint.png "Get TODO")
 
@@ -65,6 +67,5 @@ You can find it in the `/backend` directory. It's built in Express and stores th
 You can find it in the `src` folder. It has been build with React and Redux. The list of todos are fetched asynchronously from the backend via Redux-thunk.
 
 You can assume the backend is running under `http://localhost:9091/api/todo`
-
 
 ![get todo FE](docs/get_todo_frontend.png "GET todo frontend")
